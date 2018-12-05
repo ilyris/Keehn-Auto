@@ -191,3 +191,75 @@ a.main-links:hover:after {
     margin: 0 auto;
     width: 80%;
 }
+#location {
+    height: 70vh;
+    background: #000;
+    display: flex;
+    flex-flow: row wrap;
+}
+.location-title {
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.map-container {
+    display: flex;
+    background: black;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+.map-container iframe {
+    width: 100%;
+}
+
+
+.store-hours-container {
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.location-title {
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 34px;
+}
+.store-hours {
+    font-size: 26px;
+    margin: 0;
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding: 10px;
+}
+.store-hours-container {
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto;
+    border: 2px solid #333;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.store-hours-ul {
+    font-size: 25px;
+    width: 80%;
+    height: 100%;
+    text-align: left;
+}
+li.store-hours-li {
+    list-style: none;
+    margin: 20px 0;
+}
