@@ -22,11 +22,6 @@ p {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    align-items: center;
-    background: url(test-bg.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-y: -100px
 }
 
 .navigation-container {
@@ -116,4 +111,27 @@ a.main-links:hover:after {
     background: transparent;
     width: 100%;
     transition: 0s;
+}
+.home-image {
+    background: url(card-1-bg.jpeg);
+    background-size: cover;
+    grid-column: 5/9;
+    grid-row: 2/6;
+    background-repeat: no-repeat;
+    min-width: 95%;
+    max-width: 95%;
+    box-sizing: border-box;
+}
+.home-title {
+    grid-row: 3/3;
+    grid-column: 1/5;
+    font-size: 7em;
+    margin: 0;
+    padding-left: 20px;
+}
+.home-phrase {
+    grid-row: 4/4;
+    grid-column: 1/4;
+    font-size: 30px;
+    padding-left: 20px;
 }
