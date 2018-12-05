@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One');
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Mukta:800');
 
 html,
 body {
@@ -7,7 +6,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -27,12 +26,13 @@ p {
 .navigation-container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-height: 50px;
     min-height: 50px;
     padding: 0 10px;
     box-sizing: border-box;
-    position: fixed
+    position: fixed;
+    background: #000;
 }
 
 .logo {
@@ -43,7 +43,12 @@ p {
     max-height: 50px;
     min-height: 50px;
 }
-
+.call-keehn {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    color: #fff;
+}
 .main-nav {
     display: flex;
     position: fixed;
@@ -70,14 +75,14 @@ li.main-li {
 
 a.main-links {
     font-size: 1.3em;
-    font-family: 'Alfa Slab One', cursive;
     position: relative;
     cursor: pointer;
     padding: 8px 0;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     padding: 0;
     transition: all ease-in-out 300ms;
+    letter-spacing: 1px;
 }
 
 a.main-links::before,
@@ -121,6 +126,8 @@ a.main-links:hover:after {
     min-width: 95%;
     max-width: 95%;
     box-sizing: border-box;
+    background-position-y: 30%;
+    background-position-x: center;
 }
 .home-title {
     grid-row: 3/3;
@@ -128,6 +135,7 @@ a.main-links:hover:after {
     font-size: 7em;
     margin: 0;
     padding-left: 20px;
+    font-family: 'Mukta', sans-serif;
 }
 .home-phrase {
     grid-row: 4/4;
@@ -135,15 +143,13 @@ a.main-links:hover:after {
     font-size: 30px;
     padding-left: 20px;
 }
-#contact {
+
+.appointment-button-container {
+    grid-row: 4/6;
+    grid-column: 1/4;
     display: flex;
-    height: 50vh;
-    width: 80%;
-    margin: 0 auto;
-    transform: translateY(-25%);
-    justify-content: center;
-    background: #dbdbdb;
-    box-shadow: 0px 5px 15px 0px #959595;
+    align-items: center;
+    padding-left: 20px;
 }
 .appointment-button {
     padding: 10px 20px;
@@ -161,4 +167,27 @@ a.main-links:hover:after {
 .appointment-button:hover {
     background: #000;
     color: yellow;
+}
+#services {
+    display: flex;
+    height: 50vh;
+    margin: 0 auto;
+    justify-content: center;
+}
+.about-us {
+    font-size: 4em;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 2px solid #000;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    font-family: 'Mukta', sans-serif;
+}
+.about-us-text {
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 30px;
+    margin: 0 auto;
+    width: 80%;
 }
