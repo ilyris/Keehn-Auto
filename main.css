@@ -216,15 +216,22 @@ a.main-links:hover:after {
 }
 .map-container iframe {
     width: 100%;
+    border: 3px solid black;
 }
 
 
 .store-hours-container {
-    width: 50%;
+    box-shadow: 0px 10px 40px 7px #c6c6c6;
+    width: 30%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 30px auto;
+    border: 2px solid #bdbcbc;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #d6d6d6;
 }
 .location-title {
     color: white;
@@ -233,10 +240,10 @@ a.main-links:hover:after {
     align-items: center;
     display: flex;
     justify-content: center;
-    font-size: 34px;
+    font-size: 4em;
 }
 .store-hours {
-    font-size: 26px;
+    font-size: 34px;
     margin: 0;
     text-align: center;
     border-bottom: 2px solid #333;
