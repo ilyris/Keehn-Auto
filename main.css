@@ -178,6 +178,20 @@ a.main-links:hover:after {
   transform: translateX(5%);
 }
 #services {
+    
+}
+.list-of-services {
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.list-of-services ul {
+    width: 33%;
+}
+
+#about{
   display: flex;
   height: 80vh;
   margin: 0 auto;
