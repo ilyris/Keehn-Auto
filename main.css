@@ -138,32 +138,34 @@ a.main-links:hover:after {
 .home-title {
   color: #ffff01;
   grid-row: 3/3;
-  grid-column: 1/5;
+  grid-column: 1/9;
   font-size: 7em;
   margin: 0;
   padding-left: 20px;
   font-family: "Mukta", sans-serif;
+  text-align: center;
 }
 .home-phrase {
   color: #ffff01;
   grid-row: 4/4;
-  grid-column: 1/4;
+  grid-column: 1/9;
   font-size: 30px;
   padding-left: 20px;
+  text-align: center;
 }
 
 .appointment-button-container {
-  grid-row: 4/6;
-  grid-column: 1/4;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
+    grid-row: 5/5;
+    grid-column: 3/7;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    justify-content: center;
 }
 .appointment-button {
   padding: 10px 20px;
   box-sizing: border-box;
   position: relative;
-  top: 50px;
   font-size: 26px;
   text-decoration: none;
   color: #000;
