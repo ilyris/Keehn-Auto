@@ -178,7 +178,28 @@ a.main-links:hover:after {
   transform: translateX(5%);
 }
 #services {
-    
+
+}
+.services-container {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    justify-content: center;
+}
+.double-card-container {
+    width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.selected-service-container {
+    padding: 10px;
+}
+.selected-serice-title {
+    margin: 0 0 10px;
+}
+.selected-service-text {
+    line-height: 30px;
+    letter-spacing: 1px;
 }
 .list-of-services {
     display: flex;
@@ -197,7 +218,8 @@ a.main-links:hover:after {
   margin: 0 auto;
   justify-content: center;
 }
-.about-us {
+.about-us,
+.services-title {
   font-size: 4em;
   text-align: center;
   width: 50%;
