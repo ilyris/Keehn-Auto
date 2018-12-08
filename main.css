@@ -193,11 +193,16 @@ a.main-links:hover:after {
     padding: 10px;
     box-sizing: border-box;
 }
+.icon-container {
+  display: flex;
+  align-items: center;
+}
 .selected-service-container {
     padding: 10px;
 }
 .selected-serice-title {
     margin: 0 0 10px;
+    font-size: 2em;
 }
 .selected-service-text {
     line-height: 30px;
@@ -238,9 +243,14 @@ a.main-links:hover:after {
     margin: 0 auto;
 }
 img {
-    height: 500px;
-    max-width: 700px;
-    min-width: 600px;
+    max-width: 50px;
+    min-width: 50px;
+    height: 50px;
+    padding-right: 10px;
+    transform: translateX(-4%);
+}
+i {
+  padding-right: 10px;
 }
 .about-us-text {
     font-size: 24px;
