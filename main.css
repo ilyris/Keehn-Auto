@@ -155,12 +155,12 @@ a.main-links:hover:after {
 }
 
 .appointment-button-container {
-    grid-row: 5/5;
-    grid-column: 3/7;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    justify-content: center;
+  grid-row: 5/5;
+  grid-column: 3/7;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  justify-content: center;
 }
 .appointment-button {
   padding: 10px 20px;
@@ -180,46 +180,50 @@ a.main-links:hover:after {
   transform: translateX(5%);
 }
 #services {
-
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 .services-container {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 20px;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  justify-content: center;
 }
 .double-card-container {
-    width: 40%;
-    padding: 10px;
-    box-sizing: border-box;
+  width: 40%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 .icon-container {
   display: flex;
   align-items: center;
 }
 .selected-service-container {
-    padding: 10px;
+  padding: 10px;
+  margin: 10px;
 }
 .selected-serice-title {
-    margin: 0 0 10px;
-    font-size: 2em;
+  margin: 0 0 10px;
+  font-size: 2em;
 }
 .selected-service-text {
-    line-height: 30px;
-    letter-spacing: 1px;
+  line-height: 30px;
+  letter-spacing: 1px;
 }
 .list-of-services {
-    display: flex;
-    padding: 10px;
-    width: 100%;
-    font-size: 18px;
-    box-sizing: border-box;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  font-size: 18px;
+  box-sizing: border-box;
 }
 .list-of-services ul {
-    width: 33%;
+  width: 33%;
 }
 
-#about{
+#about {
+  background: url("about-background.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
   display: flex;
   height: 80vh;
   margin: 0 auto;
@@ -228,34 +232,43 @@ a.main-links:hover:after {
 .about-us,
 .services-title {
   font-size: 4em;
+  color: #fff;
   text-align: center;
   width: 50%;
   margin: 0 auto;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
   margin-bottom: 25px;
   padding-bottom: 15px;
   font-family: "Mukta", sans-serif;
 }
 .text-image-container {
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 auto;
 }
-img {
-    max-width: 50px;
-    min-width: 50px;
-    height: 50px;
-    padding-right: 10px;
-    transform: translateX(-4%);
+.icon {
+  max-width: 50px;
+  min-width: 50px;
+  height: 50px;
+  padding-right: 10px;
+  transform: translateX(-4%);
 }
 i {
   padding-right: 10px;
 }
+.services-title {
+  color: #000;
+  border-color: #000;
+}
 .about-us-text {
-    font-size: 24px;
-    letter-spacing: 2px;
-    line-height: 30px;
+  color: white;
+  font-size: 24px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  width: 55%;
+  margin: 0 auto;
+  transform: translateY(100px);
 }
 #location {
   height: 70vh;
