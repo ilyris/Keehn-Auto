@@ -25,6 +25,7 @@ p {
   background: url(pexels-photo-912845.jpeg);
   background-attachment: fixed;
 }
+
 .home-overlay {
   background: rgba(0, 0, 0, 0.65);
   grid-column: 1/9;
@@ -51,12 +52,14 @@ p {
   max-height: 50px;
   min-height: 50px;
 }
+
 .call-keehn {
   display: flex;
   align-items: center;
   font-size: 1.5em;
   color: #fff;
 }
+
 .main-nav {
   display: flex;
   position: fixed;
@@ -124,6 +127,7 @@ a.main-links:hover:after {
   width: 100%;
   transition: 0s;
 }
+
 .home-image {
   background: url(card-1-bg.jpeg);
   background-size: cover;
@@ -136,14 +140,16 @@ a.main-links:hover:after {
   background-position-y: 30%;
   background-position-x: center;
 }
+
 .home-page-text-container {
   grid-row: 4/7;
   grid-column: 2/8;
   align-self: center;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0, 0, 0, 0.4);
   padding: 15px;
   border-radius: 10px;
 }
+
 .home-title {
   color: #ffff01;
   grid-row: 3/3;
@@ -154,6 +160,7 @@ a.main-links:hover:after {
   font-family: "Mukta", sans-serif;
   text-align: center;
 }
+
 .home-phrase {
   color: #ffff01;
   grid-row: 4/4;
@@ -173,6 +180,7 @@ a.main-links:hover:after {
   position: relative;
   z-index: 10;
 }
+
 .appointment-button {
   padding: 10px 20px;
   box-sizing: border-box;
@@ -185,54 +193,66 @@ a.main-links:hover:after {
   transition: all 300ms ease-in-out 0s;
   border-radius: 30px;
 }
+
 .appointment-button:hover {
   background: #000;
   color: yellow;
   transform: translateX(5%);
 }
+
 #services {
   background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
+
 .services-container {
   display: flex;
   flex-flow: row wrap;
   padding: 20px;
   justify-content: center;
 }
+
 .double-card-container {
   width: 30%;
   padding: 10px;
   box-sizing: border-box;
 }
+
 .icon-container {
   display: flex;
   align-items: center;
 }
+
 .selected-service-container {
   padding: 10px;
   margin: 10px;
   min-height: 270px;
 }
+
 .selected-service-container.left {
   border-right: 3px solid #ffff01;
 }
+
 .selected-service-container.right {
   border-right: 3px solid transparent;
 }
+
 .selected-serice-title {
   margin: 0 0 10px;
   font-size: 2em;
 }
+
 .selected-service-text {
   line-height: 30px;
   letter-spacing: 1px;
 }
+
 .more-services-text {
   font-size: 30px;
   width: 50%;
   text-align: center;
   margin: 0 auto;
 }
+
 .more-services-button {
   cursor: pointer;
   width: 10%;
@@ -248,10 +268,12 @@ a.main-links:hover:after {
   box-shadow: 2px 2px 2px 0px #999;
   transition: all ease-in-out 300ms;
 }
+
 .more-services-button:hover {
   background: #ffff01;
   border-color: #000;
 }
+
 .list-of-services {
   display: flex;
   padding: 10px;
@@ -259,27 +281,26 @@ a.main-links:hover:after {
   font-size: 18px;
   box-sizing: border-box;
 }
+
 .list-of-services ul {
   width: 33%;
 }
 
 #about {
-  background: url("about-background.jpeg");
-  background-size: cover;
-  background-attachment: fixed;
   display: flex;
   height: 80vh;
   margin: 0 auto;
   justify-content: center;
 }
+
 .about-us,
 .services-title {
   font-size: 4em;
-  color: #fff;
+  color: #000;
   text-align: center;
   width: 50%;
   margin: 0 auto;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ffff01;
   margin-bottom: 25px;
   padding-bottom: 15px;
   font-family: "Mukta", sans-serif;
@@ -292,22 +313,25 @@ a.main-links:hover:after {
   padding-right: 10px;
   transform: translateX(-4%);
 }
+
 i {
   padding-right: 10px;
 }
+
 .services-title {
   color: #000;
   border-color: #000;
 }
+.about-text-container {
+  width: 50%;
+}
 .about-us-text {
-  color: white;
+  color: #000;
   font-size: 24px;
   letter-spacing: 2px;
   line-height: 30px;
-  width: 55%;
-  margin: 0 auto;
-  transform: translateY(100px);
 }
+
 #location {
   height: 70vh;
   background: #000;
@@ -315,6 +339,7 @@ i {
   display: flex;
   flex-flow: row wrap;
 }
+
 .location-title {
   color: white;
   width: 100%;
@@ -323,6 +348,7 @@ i {
   display: flex;
   justify-content: center;
 }
+
 .map-container {
   display: flex;
   background: black;
@@ -332,6 +358,7 @@ i {
   align-items: center;
   width: 50%;
 }
+
 .map-container iframe {
   width: 100%;
 }
@@ -345,35 +372,52 @@ i {
   justify-content: center;
   font-size: 4em;
 }
+
 .store-hours {
   font-size: 34px;
   margin: 0;
   text-align: center;
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #ffe500;
   padding: 10px;
 }
 
+.parent-store-hours-container {
+  width: 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  background: url(about-background.jpeg);
+  background-size: cover;
+  background-position-x: 60%;
+}
+
 .store-hours-container {
-  width: 30%;
-  color: #000;
+  color: #fff;
   display: flex;
   flex-direction: column;
+  margin: 50px auto;
   justify-content: center;
-  margin: 30px auto;
-  border: 2px solid #bdbcbc;
   padding: 10px;
   box-sizing: border-box;
-  background: #d6d6d6;
+  background: rgba(0,0,0,0.55);
+  border-radius: 10px;
 }
+
 .store-hours-ul {
   font-size: 25px;
-  width: 80%;
+  width: 100%;
   height: 100%;
   text-align: left;
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 70px;
+  padding: 0;
 }
+
 li.store-hours-li {
   list-style: none;
-  margin: 20px 0;
+  margin: 5px 0;
+  min-height: 30px;
+  display: flex;
 }
 
 
