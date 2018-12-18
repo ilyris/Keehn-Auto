@@ -200,7 +200,7 @@ a.main-links:hover:after {
   justify-content: center;
 }
 .double-card-container {
-  width: 40%;
+  width: 30%;
   padding: 10px;
   box-sizing: border-box;
 }
@@ -212,6 +212,12 @@ a.main-links:hover:after {
   padding: 10px;
   margin: 10px;
 }
+.selected-service-container.left {
+  border-right: 3px solid #ffff01;
+}
+.selected-service-container.right {
+  border-right: 3px solid transparent;
+}
 .selected-serice-title {
   margin: 0 0 10px;
   font-size: 2em;
@@ -219,6 +225,12 @@ a.main-links:hover:after {
 .selected-service-text {
   line-height: 30px;
   letter-spacing: 1px;
+}
+.more-services-text {
+  font-size: 30px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
 }
 .list-of-services {
   display: flex;
