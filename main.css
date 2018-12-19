@@ -388,7 +388,12 @@ i {
   padding: 10px;
   font-family: initial;
 }
-
+.parent-about-container {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
 .parent-store-hours-container {
   width: 50%;
   background-repeat: no-repeat;
@@ -396,6 +401,7 @@ i {
   background: url(about-background.jpeg);
   background-size: cover;
   background-position-x: 60%;
+  align-items: center;
 }
 
 .store-hours-container,
@@ -412,9 +418,12 @@ i {
   height: 70%;
   align-items: center;
 }
+.store-hours-container {
+  height: 60%;
+}
 .about-text-container {
   background: none;
-  width: 50%;
+  max-height: 445px;
 }
 
 .store-hours-ul, 
@@ -425,7 +434,7 @@ i {
   text-align: left;
   display: flex;
   flex-flow: column wrap;
-  margin-top: 70px;
+  margin-top: 50px;
   padding: 0;
 }
 
@@ -434,6 +443,7 @@ li.store-hours-li {
   margin: 5px 0;
   min-height: 30px;
   display: flex;
+  justify-content: space-between;
 }
 
 
