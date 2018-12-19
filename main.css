@@ -295,11 +295,12 @@ a.main-links:hover:after {
 
 .about-us,
 .services-title {
-  font-size: 4em;
   color: #000;
+  font-size: 4em;
+  box-sizing: border-box;
   text-align: center;
   width: 50%;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   border-bottom: 2px solid #ffff01;
   margin-bottom: 25px;
   padding-bottom: 15px;
@@ -324,14 +325,22 @@ i {
 }
 .about-text-container {
   width: 50%;
+  padding: 30px;
+  box-sizing: border-box;
 }
 .about-us-text {
   color: #000;
+  text-align: center;
   font-size: 24px;
   letter-spacing: 2px;
   line-height: 30px;
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 auto;
 }
-
+.about-us {
+  font-size: 3em;
+}
 #location {
   height: 70vh;
   background: #000;
@@ -388,6 +397,7 @@ i {
   background: url(about-background.jpeg);
   background-size: cover;
   background-position-x: 60%;
+  
 }
 
 .store-hours-container {
@@ -400,6 +410,7 @@ i {
   box-sizing: border-box;
   background: rgba(0,0,0,0.55);
   border-radius: 10px;
+  height: 70%;
 }
 
 .store-hours-ul {
