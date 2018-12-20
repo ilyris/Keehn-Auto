@@ -334,9 +334,11 @@ i {
   max-width: 500px;
   margin: 0 auto;
 }
+
 .about-us {
   font-size: 3em;
 }
+
 #location {
   height: 70vh;
   background: #ffff01;
@@ -359,7 +361,7 @@ i {
   width: 100%;
 }
 
-.location-h3{
+.location-h3 {
   color: #000000;
   width: 100%;
   margin: 0;
@@ -369,18 +371,38 @@ i {
   text-align: left;
   font-weight: 800;
 }
+
 .contact-information-container {
   display: flex;
   flex-flow: column;
   width: 100%;
   height: 450px;
 }
+
 .phone-number,
-.address {
+.address,
+.location-appointment {
   width: 100%;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #000;
+  font-weight: 800;
+  letter-spacing: 1.5px;
 }
 
-.store-hours, 
+.phone-number,
+.location-appointment {
+  text-decoration: none;
+  width: 50%;
+  text-align: center;
+  border: 2px solid black;
+  padding: 20px;
+  background: black;
+  color: yellow;
+  border-radius: 10px;
+}
+
+.store-hours,
 .about-us {
   font-family: "Montserrat", sans-serif;
   font-size: 34px;
@@ -390,12 +412,14 @@ i {
   padding: 10px;
   font-family: initial;
 }
+
 .parent-about-container {
   width: 50%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
 }
+
 .parent-store-hours-container {
   width: 50%;
   background-repeat: no-repeat;
@@ -415,20 +439,22 @@ i {
   justify-content: center;
   padding: 10px;
   box-sizing: border-box;
-  background: rgba(0,0,0,0.55);
+  background: rgba(0, 0, 0, 0.55);
   border-radius: 10px;
   height: 70%;
   align-items: center;
 }
+
 .store-hours-container {
   height: 60%;
 }
+
 .about-text-container {
   background: none;
   max-height: 445px;
 }
 
-.store-hours-ul, 
+.store-hours-ul,
 .about-us-text {
   font-size: 25px;
   width: 100%;
@@ -439,6 +465,7 @@ i {
   margin-top: 50px;
   padding: 0;
 }
+
 /* blah */
 
 li.store-hours-li {
