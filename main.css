@@ -341,8 +341,6 @@ i {
 
 #location {
   height: 70vh;
-  background: #ffff01;
-  padding: 20px;
   display: flex;
   flex-flow: row wrap;
 }
@@ -353,8 +351,12 @@ i {
   box-sizing: border-box;
   justify-content: space-between;
   align-items: baseline;
-  width: 33%;
+  width: 49%;
   flex-flow: row wrap;
+  background: yellow;
+}
+.contact-container {
+  background: #fff;
 }
 
 .map-container iframe {
@@ -366,40 +368,47 @@ i {
   width: 100%;
   margin: 0;
   font-size: 2em;
-  border-bottom: solid 3px #000000;
+  border-bottom: solid 3px #FFEB3B;
   padding-bottom: 20px;
-  text-align: left;
+  text-align: center;
   font-weight: 800;
+  width: 70%;
+  margin: 0 auto;
 }
-
+.map-container .location-h3 {
+  border-color: #000;
+}
 .contact-information-container {
   display: flex;
   flex-flow: column;
   width: 100%;
   height: 450px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .phone-number,
 .address,
 .location-appointment {
-  width: 100%;
+  width: 70%;
   font-size: 22px;
   margin-bottom: 20px;
   color: #000;
   font-weight: 800;
   letter-spacing: 1.5px;
+  text-align: center;
 }
 
 .phone-number,
 .location-appointment {
   text-decoration: none;
-  width: 50%;
+  width: 30%;
   text-align: center;
-  border: 2px solid black;
   padding: 20px;
-  background: black;
-  color: yellow;
+  background: #FFEB3B;
+  color: black;
   border-radius: 10px;
+  box-shadow: 2px 2px 2px 0px #999;
 }
 
 .store-hours,
