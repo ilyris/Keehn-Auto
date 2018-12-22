@@ -9,7 +9,9 @@ body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
-
+#location,#about {
+  margin-top: 100px;
+}
 p {
   margin: 0;
   padding: 0;
@@ -42,6 +44,7 @@ p {
   box-sizing: border-box;
   position: fixed;
   z-index: 100;
+  background-color: #000;
 }
 
 .logo {
@@ -201,7 +204,7 @@ a.main-links:hover:after {
 }
 
 #services {
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-color: #fff;
 }
 
 .services-container {
@@ -288,7 +291,7 @@ a.main-links:hover:after {
 
 #about {
   display: flex;
-  height: 80vh;
+  height: 100vh;
   margin: 0 auto;
   justify-content: center;
 }
@@ -340,7 +343,7 @@ i {
 }
 
 #location {
-  height: 70vh;
+  height: 85vh;
   display: flex;
   flex-flow: row wrap;
 }
@@ -390,7 +393,7 @@ i {
 .phone-number,
 .address,
 .location-appointment {
-  width: 70%;
+  width: 50%;
   font-size: 22px;
   margin-bottom: 20px;
   color: #000;
