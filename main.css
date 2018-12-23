@@ -256,27 +256,35 @@ a.main-links:hover:after {
   margin: 0 auto;
 }
 
-.more-services-button {
+.more-services-button-container {
   cursor: pointer;
-  width: 10%;
+  width: 100%;
+  box-sizing: border-box;
   margin: 40px auto;
   padding: 15px;
-  font-size: 24px;
-  padding-left: 30px;
-  text-align: center;
-  background: white;
-  border-radius: 40px;
-  font-weight: 600;
-  border: 2px solid yellow;
-  box-shadow: 2px 2px 2px 0px #999;
-  transition: all ease-in-out 300ms;
+  display: flex;
+  justify-content: center;
 }
 
-.more-services-button:hover {
+.full-list-button {
+  padding: 15px 20px;
+  width: 200px;
+  text-align: center;
+  background: #fff;
+  border: 2px solid yellow;
+  border-radius: 40px;
+  transition: all ease-in-out 300ms;
+  box-shadow: 2px 2px 2px 0px #999;
+  font-size: 22px;
+}
+.full-list-button i {
+  padding-right: 0;
+}
+
+.full-list-button:hover {
   background: #ffff01;
   border-color: #000;
 }
-
 .list-of-services {
   display: flex;
   padding: 10px;
