@@ -256,8 +256,8 @@ a.main-links:hover:after {
   margin: 0 auto;
 }
 
+
 .more-services-button-container {
-  cursor: pointer;
   width: 100%;
   box-sizing: border-box;
   margin: 40px auto;
@@ -266,7 +266,8 @@ a.main-links:hover:after {
   justify-content: center;
 }
 
-.full-list-button {
+#full-list-button {
+  cursor: pointer;
   padding: 15px 20px;
   width: 200px;
   text-align: center;
@@ -276,23 +277,27 @@ a.main-links:hover:after {
   transition: all ease-in-out 300ms;
   box-shadow: 2px 2px 2px 0px #999;
   font-size: 22px;
+  font-weight: bold;
 }
-.full-list-button i {
+#full-list-button i {
   padding-right: 0;
 }
 
-.full-list-button:hover {
+#full-list-button:hover,
+#full-list-button.list-active {
   background: #ffff01;
   border-color: #000;
 }
-.list-of-services {
-  display: flex;
+#list-of-services {
+  display: none;
   padding: 10px;
   width: 100%;
   font-size: 18px;
   box-sizing: border-box;
 }
-
+#list-of-services.show {
+  display: flex;
+}
 .list-of-services ul {
   width: 33%;
 }
