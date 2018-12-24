@@ -18,20 +18,23 @@ p {
 }
 
 #home {
-  position: relative;
   width: 100%;
-  height: 84vh;
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-  background: url(pexels-photo-912845.jpeg);
-  background-attachment: fixed;
+  height: 100vh;
+  background:transparent;
+  position:relative;
 }
 
-.home-overlay {
-  background: rgba(0, 0, 0, 0.65);
-  grid-column: 1/9;
-  grid-row: 1/13;
+.background-image {
+  height:100vh;
+  background: url(pexels-photo-912845.jpeg);
+  background-attachment: fixed;
+  background-size:cover;
+  filter:grayscale(1);
+  width:100vw;
+  z-index:-999;
+  position:absolute;
+  top:0;
+  left:0;
 }
 
 .navigation-container {
@@ -44,7 +47,7 @@ p {
   box-sizing: border-box;
   position: fixed;
   z-index: 100;
-  background-color: #000;
+  background-color: transparent;
 }
 
 .logo {
@@ -54,6 +57,7 @@ p {
   min-width: 122px;
   max-height: 50px;
   min-height: 50px;
+  margin:3px;
 }
 
 .call-keehn {
@@ -145,68 +149,125 @@ a.main-links:hover:after {
 }
 
 .home-page-text-container {
-  grid-row: 4/7;
-  grid-column: 2/8;
-  align-self: center;
+  position: absolute;
+  top:40%;
+  left:50%;
+  display:flex;
+  align-items:center;
+  justify-content: space-around;
+  transform:translate(-50%,-50%);
   background: rgba(0, 0, 0, 0.4);
+  flex-direction:column;
+  height:40vh;
+  width:75vw;
   padding: 15px;
   border-radius: 10px;
 }
 
 .home-title {
   color: #ffff01;
-  grid-row: 3/3;
-  grid-column: 1/9;
-  font-size: 7em;
-  margin: 0;
-  padding-left: 20px;
+  font-size: 4rem;
+  margin:0;
   font-family: "Mukta", sans-serif;
   text-align: center;
 }
 
 .home-phrase {
-  color: #ffff01;
-  grid-row: 4/4;
-  grid-column: 1/9;
-  font-size: 30px;
-  padding-left: 20px;
+  color: #fff;
+  font-size: x-large;
   text-align: center;
 }
-
-.appointment-button-container {
-  grid-row: 8/10;
-  grid-column: 3/7;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
+.appointment-container {
+  position: absolute;
+  bottom:10%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  display:flex;
   justify-content: center;
-  position: relative;
-  z-index: 10;
+  align-items: center;
 }
-
 .appointment-button {
-  padding: 10px 20px;
-  box-sizing: border-box;
-  position: relative;
-  font-size: 26px;
+  border:none;
+  box-shadow:1px 1px 1px 1px #444;
+  background:#ffe500;
+  color:#222;
+  font-size:x-large;
   text-decoration: none;
-  color: #000;
-  background: white;
-  border: 3px solid #000;
-  transition: all 300ms ease-in-out 0s;
-  border-radius: 30px;
+  border-radius:50px;
+  font-weight: bold;
+  padding:15px;
+  text-transform: uppercase;
+  width:5em;
+  text-align:center;
+  transition:all .2s ease-in-out;
 }
 
 .appointment-button:hover {
-  background: #000;
-  color: yellow;
-  transform: translateX(5%);
+  background:#fff;
 }
+
+
+
+/* REWROTE SOME CSS FOR SERVICES */
 
 #services {
   background-color: #fff;
 }
 
+.services-page {
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+  width:100vw;
+  color:#333;
+}
+
+.service-row {
+  display:flex;
+  flex:1;
+  justify-content: space-between;
+  align-items:center;
+}
+.service-row .service-container:first-child .service-content {
+  border-right:2px solid #ffe500;
+}
+.service-container {
+  display:flex;
+  flex-direction: column;
+  flex:1;
+}
+.service-header {
+  display:flex;
+  justify-content: center;
+  padding-left:50px;
+}
+.service-content {
+  display:flex;
+  padding:1em;
+  align-items:center;
+  text-align:center;
+  font-size:large;
+}
+.service-content p {
+  padding:1em;
+}
+.service-icon {
+
+}
+
+/* ANIMATE IN ON SCROLL DOWN */
+@keyframes fade-in {
+  from {opacity: 0; transform: scale(.7,.7)}
+  to {opacity: 1;}
+}
+.fade-in-element {
+animation: fade-in 1.4s;
+}
+
+.hidden {
+  opacity: 0;
+}
+/* END EDIT SERVICED */
 .services-container {
   display: flex;
   flex-flow: row wrap;
