@@ -302,6 +302,11 @@ a.main-links:hover:after {
   width: 33%;
 }
 
+/* slider container section */
+.testimonial-slider-container {
+  
+}
+
 #about {
   display: flex;
   height: 100vh;
