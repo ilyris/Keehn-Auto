@@ -8,6 +8,7 @@ body {
   padding: 0;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 ul {
   list-style:none;
@@ -317,6 +318,7 @@ animation: fade-in 1.4s;
   width: 100%;
   font-size: 18px;
   box-sizing: border-box;
+  justify-content: center;
 }
 #list-of-services.show {
   display: flex;
