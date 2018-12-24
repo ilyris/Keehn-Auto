@@ -327,6 +327,11 @@ animation: fade-in 1.4s;
   width: 33%;
 }
 
+/* slider container section */
+.testimonial-slider-container {
+  
+}
+
 #about {
   display: flex;
   height: 100vh;
