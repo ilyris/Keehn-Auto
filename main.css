@@ -9,6 +9,10 @@ body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
+ul {
+  list-style:none;
+  padding:0;
+}
 #location,#about {
   margin-top: 100px;
 }
@@ -47,7 +51,7 @@ p {
   box-sizing: border-box;
   position: fixed;
   z-index: 100;
-  background-color: transparent;
+  background-color: rgba(0,0,0,.5);
 }
 
 .logo {
@@ -57,7 +61,6 @@ p {
   min-width: 122px;
   max-height: 50px;
   min-height: 50px;
-  margin:3px;
 }
 
 .call-keehn {
@@ -220,6 +223,7 @@ a.main-links:hover:after {
   height:100vh;
   width:100vw;
   color:#333;
+  margin-top:1em;
 }
 
 .service-row {
@@ -268,47 +272,6 @@ animation: fade-in 1.4s;
   opacity: 0;
 }
 /* END EDIT SERVICED */
-.services-container {
-  display: flex;
-  flex-flow: row wrap;
-  padding: 20px;
-  justify-content: center;
-}
-
-.double-card-container {
-  width: 30%;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-.icon-container {
-  display: flex;
-  align-items: center;
-}
-
-.selected-service-container {
-  padding: 10px;
-  margin: 10px;
-  min-height: 270px;
-}
-
-.selected-service-container.left {
-  border-right: 3px solid #ffff01;
-}
-
-.selected-service-container.right {
-  border-right: 3px solid transparent;
-}
-
-.selected-serice-title {
-  margin: 0 0 10px;
-  font-size: 2em;
-}
-
-.selected-service-text {
-  line-height: 30px;
-  letter-spacing: 1px;
-}
 
 .more-services-text {
   font-size: 30px;
@@ -347,7 +310,6 @@ animation: fade-in 1.4s;
 #full-list-button:hover,
 #full-list-button.list-active {
   background: #ffff01;
-  border-color: #000;
 }
 #list-of-services {
   display: none;
@@ -590,4 +552,53 @@ li.store-hours-li {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
+
+@media screen and (max-width:500px){
+  .home-title {
+    font-size:3rem;
+  }
+  .home-phrase {
+    font-size: large;
+  }
+  li.main-li{
+    padding:0 2px;
+  }
+  a.main-links {
+    font-size:12px;
+    letter-spacing: 0;
+  }
+  .services-page {
+    height:auto;
+    width:auto;
+  }
+  .service-row {
+    flex-direction:column;
+  }
+  .service-row .service-container:first-child .service-content, .service-row .service-container:nth-child(2) .service-content {
+    border-right:2px solid #fff;
+    box-shadow: 0px 50px 1px -48px #ffe500;
+  }
+  .service-container {
+  }
+  .service-header {
+  }
+  .service-content {
+  }
+  .service-content p {
+ 
+  }
+  .service-icon {
+  
+  }
+  .more-services-text {
+    font-size:large;
+    margin-top:2em;
+  }
+  #list-of-services.show{
+    flex-direction: column;
+    text-align:center;
+  }
 }
