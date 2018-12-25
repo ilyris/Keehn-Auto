@@ -90,7 +90,7 @@ const animateHTML = function() {
         slideContainer[i].style.display = "none";
 
       }
-      slideContainer[slideIndex-1].style.display = "block";
+      slideContainer[slideIndex-1].style.display = "flex";
     }  
 
 

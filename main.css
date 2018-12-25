@@ -13,6 +13,7 @@ body {
 ul {
   list-style: none;
   padding: 0;
+  
 }
 
 #location,
@@ -173,7 +174,7 @@ a.main-links:hover:after {
 
 .home-title {
   color: #ffff01;
-  font-size: 4rem;
+  font-size: 6rem;
   margin: 0;
   font-family: "Mukta", sans-serif;
   text-align: center;
@@ -187,7 +188,7 @@ a.main-links:hover:after {
 
 .appointment-container {
   position: absolute;
-  bottom: 10%;
+  bottom: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
@@ -261,10 +262,12 @@ a.main-links:hover:after {
   align-items: center;
   text-align: center;
   font-size: large;
+  justify-content: center;
 }
 
 .service-content p {
   padding: 1em;
+  width: 50%;
 }
 
 .service-icon {}
@@ -346,16 +349,65 @@ a.main-links:hover:after {
 
 .list-of-services ul {
   width: 33%;
-}
-#list-of-services ul li {
-  padding: 5px 0;
-  letter-spacing: 2px;
-  list-style: none;
+  margin-right: 10px;
 }
 
+#list-of-services ul li {
+  padding: 5px;
+  letter-spacing: 2px;
+  list-style: none;
+  max-width: 400px;
+}
+
+.testimonial-slider-container {
+  height: 50vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #c8c8c8;
+}
+.testimonial-slider-container button {
+  height: 50px;
+  width: 50px;
+  border: solid 2px black;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 25px;
+  background-color: white;
+  transition: all ease-in-out 200ms;
+  display: flex;
+  justify-content: center;
+}
+.testimonial-slider-container button i {
+  padding: 0;
+  font-size: 30px;
+}
+.testimonial-slider-container button:hover {
+  background-color: yellow;
+}
 .slide-container {
   display: none;
+  font-size: 28px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  height: 100%;
 }
+.slide-container p {
+  padding-top: 20px;
+  text-align: center;
+  width: 70%;
+}
+.customers-name {
+  font-weight: bold;
+  font-size: 30px;
+
+}
+
 /* slider container section */
 .testimonial-slider-container {}
 
@@ -561,16 +613,13 @@ li.store-hours-li {
   display: flex;
   justify-content: space-between;
 }
-
-
-
-
 .main-footer {
   background: #000;
   width: 100%;
   display: flex;
   padding: 10px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .main-footer .footer-links {
@@ -590,6 +639,17 @@ li.store-hours-li {
   text-decoration: none;
   color: #fff;
   font-size: 18px;
+}
+.copyright {
+  color: #fff;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.copyright p {
+  margin: 0;
 }
 
 /* RESPONSIVE MEDIA QUERIES */

@@ -83,7 +83,7 @@
                         <h1>Tune-Up</h1>
                     </div>
                     <div class="service-content">
-                       <img src="wrench-solid.svg" class="icon">
+                        <img src="wrench-solid.svg" class="icon">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisinciduntfugit
                             assumenda laborum dolorum, voluptatibus magni repellat temporibus? Perspiciatis,
                             laboriosam.
@@ -101,10 +101,10 @@
                     </div>
                     <div class="service-content">
                         <img src="diagnoses-solid.svg" class="icon">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisinciduntfugit
-                                assumenda laborum dolorum, voluptatibus magni repellat temporibus? Perspiciatis,
-                                laboriosam.
-                            </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisinciduntfugit
+                            assumenda laborum dolorum, voluptatibus magni repellat temporibus? Perspiciatis,
+                            laboriosam.
+                        </p>
                     </div>
                 </div>
                 <div class="service-container">
@@ -123,12 +123,13 @@
 
             <div class="service-row hidden">
                 <div class="service-container">
-                        <p class="more-services-text">Of course these are not our only services! We've got more such as tire sales and A/C
-                                services.
-                                Check our full list of services below!</p>
-                                <div class="more-services-button-container">
-                                        <div id="full-list-button">Full list <i class="fas fa-angle-double-down"></i></div>
-                                    </div>
+                    <p class="more-services-text">Of course these are not our only services! We've got more such as
+                        tire sales and A/C
+                        services.
+                        Check our full list of services below!</p>
+                    <div class="more-services-button-container">
+                        <div id="full-list-button">Full list <i class="fas fa-angle-double-down"></i></div>
+                    </div>
                 </div>
             </div>
 
@@ -181,20 +182,25 @@
         </div>
     </section>
     <section class="testimonial-slider-container">
+        <button class="previous" onclick="moveContent(-1)"><i class="fas fa-arrow-left"></i></button>
         <div class="slide-container animated">
-            <p>some placeholder customer name for the review</p>
-            <p>Number 1</p>
+            <p>"The only place any of our vehicles go. No problem he can't fix! Highly recommended" </p>
+            <p> -<span class="customers-name">Dana Mclain</span></p>
         </div>
         <div class="slide-container animated">
-            <p>some placeholder customer name for the review</p>
-            <p>Number two!</p>
+            <p>"I filled my diesel truck with gas on New Years eve . As we all know thats not good . Thanks to the guys
+                at Keehn and Rays towing drained the gas changed filters and overall just took care of us all on NEW
+                YEAR'S EVE . Thank you again Jeff and Ray" </p>
+            <p> - <span class="customers-name">Donlad Scott</span></p>
         </div>
         <div class="slide-container animated">
-            <p>some placeholder customer name for the review</p>
-            <p>Number Three!!!</p>
+            <p>"Knowledgeable, fairly priced, professional service. I take all of our vehicles to Jeff for everything
+                from routine maintenance to heavy duty repairs. He can do it all and you can be sure that it's done
+                right. Highly recommended."</p>
+            <p> - <span class="customers-name">Brandon Allen</span></p>
         </div>
-        <button class = "previous" onclick="moveContent(-1)">&#10094;</button>
-        <button class = "next" onclick="moveContent(1)">&#10095;</button>
+
+        <button class="next" onclick="moveContent(1)"><i class="fas fa-arrow-right"></i></button>
     </section>
     <section id="about">
         <div class="parent-about-container">
@@ -263,6 +269,7 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
         </ul>
+        <span class="copyright"><P>&#169 2018 Sieren Media</P></span>
     </footer>
     <script src="main.js"></script>
 </body>
