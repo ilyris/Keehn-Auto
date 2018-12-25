@@ -73,18 +73,17 @@ const animateHTML = function() {
 
 
 
-  console.log(slideIndex);
   showContent(slideIndex);
 
-  function moveContent(x) {
-    showContent(slideIndex += x);
+  function moveContent(slideIndexValue) {
+    showContent(slideIndex += slideIndexValue);
   }
-  function showContent(x) {
+  function showContent(slideIndexValue) {
     const slideContainer = document.getElementsByClassName("slide-container");
-    if(x > slideContainer.length) {
+    if(slideIndexValue > slideContainer.length) {
       slideIndex = 1;
     }
-    if(x < 1) { 
+    if(slideIndexValue < 1) { 
       slideIndex = slideContainer.length
     }
       for(let i = 0; i < slideContainer.length; i++) {
