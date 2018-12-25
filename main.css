@@ -347,7 +347,15 @@ a.main-links:hover:after {
 .list-of-services ul {
   width: 33%;
 }
+#list-of-services ul li {
+  padding: 5px 0;
+  letter-spacing: 2px;
+  list-style: none;
+}
 
+.slide-container {
+  display: none;
+}
 /* slider container section */
 .testimonial-slider-container {}
 

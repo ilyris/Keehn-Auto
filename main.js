@@ -4,6 +4,12 @@
 
 const seeMoreServicesButton = document.getElementById('full-list-button');
 const fullListOfServices = document.getElementById('list-of-services');
+let slideIndex = 1;
+const previousButton = document.querySelector(".previous");
+const nextButton = document.querySelector(".next")
+
+previousButton.addEventListener("click", console.log(123), moveContent(-1) );
+nextButton.addEventListener("click", console.log(123), moveContent(1) );
 
 
 seeMoreServicesButton.addEventListener('click', showList);
@@ -61,4 +67,35 @@ const animateHTML = function() {
       init: init
     };
   };
-  animateHTML().init();
+  animateHTML().init(); 
+
+    
+
+
+
+  console.log(slideIndex);
+  showContent(slideIndex);
+
+  function moveContent(x) {
+    showContent(slideIndex += x);
+  }
+  function showContent(x) {
+    const slideContainer = document.getElementsByClassName("slide-container");
+    if(x > slideContainer.length) {
+      slideIndex = 1;
+    }
+    if(x < 1) { 
+      slideIndex = slideContainer.length
+    }
+      for(let i = 0; i < slideContainer.length; i++) {
+        slideContainer[i].style.display = "none";
+
+      }
+      slideContainer[slideIndex-1].style.display = "block";
+    }  
+
+
+ 
+  
+
+
