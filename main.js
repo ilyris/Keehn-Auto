@@ -8,8 +8,8 @@ let slideIndex = 1;
 const previousButton = document.querySelector(".previous");
 const nextButton = document.querySelector(".next")
 
-previousButton.addEventListener("click", console.log(123), moveContent(-1) );
-nextButton.addEventListener("click", console.log(123), moveContent(1) );
+previousButton.addEventListener("click", () => moveContent(-1) );
+nextButton.addEventListener("click", () => moveContent(1) );
 
 
 seeMoreServicesButton.addEventListener('click', showList);
